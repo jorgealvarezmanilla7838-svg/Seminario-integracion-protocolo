@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inicio – Rectificadora Automotriz</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand" href="index.html">🔧 Rectificadora <span>Automotriz</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav me-auto ms-3 gap-1">
+        <li class="nav-item"><a class="nav-link active" href="index.html">🏠 Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="precios.html">💰 Precios</a></li>
+        <li class="nav-item"><a class="nav-link" href="servicios.html">🛠 Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="consultas.html">📅 Agendar</a></li>
+        <li class="nav-item"><a class="nav-link" href="locaciones.html">📍 Locaciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="refacciones.html">🔩 Refacciones</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3 mt-2 mt-lg-0">
+        <span class="badge-user" id="navUsuario"></span>
+        <button onclick="logout()" class="btn-outline-rojo" style="border-color:rgba(255,255,255,0.4); color:rgba(255,255,255,0.8);">Cerrar sesión</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Bienvenido a Rectificadora <span style="color:#e63946">Automotriz</span></h1>
+  <p>Tu taller de confianza. Servicio profesional, calidad garantizada.</p>
+</div>
+
+<!-- IMAGEN -->
+<div class="container my-4">
+  <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200&q=80" alt="Taller automotriz" class="hero-img">
+</div>
+
+<!-- MENÚ CARDS -->
+<div class="container pb-4">
+  <div class="row g-3 justify-content-center">
+
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <a href="precios.html" class="card-menu">
+        <div class="icon">💰</div>
+        <h5>Precios</h5>
+        <p>Lista de servicios</p>
+      </a>
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <a href="servicios.html" class="card-menu">
+        <div class="icon">🛠</div>
+        <h5>Servicios</h5>
+        <p>Lo que ofrecemos</p>
+      </a>
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <a href="consultas.html" class="card-menu">
+        <div class="icon">📅</div>
+        <h5>Agendar</h5>
+        <p>Agenda tu cita</p>
+      </a>
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <a href="ver_citas.html" class="card-menu">
+        <div class="icon">📋</div>
+        <h5>Mis citas</h5>
+        <p>Ver mis citas</p>
+      </a>
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <a href="locaciones.html" class="card-menu">
+        <div class="icon">📍</div>
+        <h5>Locaciones</h5>
+        <p>Nuestras sucursales</p>
+      </a>
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <a href="refacciones.html" class="card-menu">
+        <div class="icon">🔩</div>
+        <h5>Refacciones</h5>
+        <p>Catálogo</p>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<div class="footer">© 2026 Rectificadora Automotriz · Todos los derechos reservados</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="session.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>
